@@ -1,0 +1,14 @@
+<mat-card>
+  <form [formGroup]="postForm">
+    <mat-form-field class="example-full-width mat-form-field-flex" appearance="fill">
+      <mat-label>Post title</mat-label>
+      <input formControlName="title" matInput>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Write something</mat-label>
+      <textarea formControlName="content" matInput></textarea>
+    </mat-form-field>
+    <hr>
+    <button color="primary" mat-raised-button (click)="onAddPost()">Save post</button>
+  </form>
+</mat-card>
